@@ -1,0 +1,264 @@
+.header {
+   background-color: black;
+   margin: 0;
+   padding: 20px;
+}
+.header__logo {
+   margin-left: 115.28px;
+   margin-top: 22.46px;
+}
+.header__menu {
+   word-spacing: 60px;
+}
+.header__menu__item {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 14px;
+   display: inline;
+   text-transform: capitalize;
+   text-align: center;
+   color:#fff;
+}
+.header__menu__link {
+   text-decoration: none;
+   color:#fff;
+}
+
+.main-banner {
+   background-color: grey;
+   padding-left: 170px;
+   padding-top: 200px;
+   padding-bottom: 200px;
+}
+.main-banner__title {
+   font-family: 'Raleway', sans-serif;
+   text-transform: uppercase;
+   font-size: 48px;
+   font-weight: 500;
+   color: #fff;
+}
+.main-banner__discriptoin {
+   font-family: 'Raleway', sans-serif;
+   font-size: 18px;
+   color:#fff;
+   padding-top: 30px;
+}
+.main-banner__button { /*Кнопка, надо ли стилизовать и как?*/
+   font-family: 'Open Sans', sans-serif;
+   font-size: 18px;
+   text-decoration: none;
+   color: #fff;
+   text-transform: capitalize;
+}
+
+.media {
+   background-color: #F8EFEF;
+   padding-left: 170px;
+   padding-top: 5px;
+}
+.media__title {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 24px;
+   color:#333333;
+   text-transform: capitalize;
+}
+.media__discription {
+   font-family: 'Raleway', sans-serif;
+   font-size: 18px;
+   color: #86878B;
+}
+.media__info__item {
+   display: inline;
+}
+.media__info__menu {
+   word-spacing: 30px;
+}
+
+.section {
+   padding-left: 170px;
+}
+.about {
+   list-style-type: none;
+}
+.about__item {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 14px;
+   color:#333333;
+   /* сделать заглавные в родителе только, что бы не передовалось остальным?*/
+   text-transform
+}
+.about__info__block__title {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 30px;
+   color:black;
+   font-weight: bold;
+}
+.about__info__block__text {
+   font-family: 'Raleway', sans-serif;
+   font-size: 18px;
+   color: black;
+}
+.about__info__button {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 18px;
+   text-decoration: none;
+   /*без фона не видно. КНОПКА*/
+   /*color: #fff;*/
+}
+
+.title {
+   font-family: 'Raleway', sans-serif;
+   font-size: 36px;
+   color:black;
+   text-transform:uppercase;
+   font-weight: normal;
+   text-align: center;
+   padding-top: 100px;
+}
+.advantage__item {
+   display: inline;  /* Почему-то не работает!!! */
+   list-style-type: none;
+}
+
+.advantage__item__title {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 24px;
+   font-weight: bold;
+   color:black;
+   text-transform:capitalize;
+}
+.advantage__item__text {
+   font-family: 'Raleway', sans-serif;
+   font-size: 18px;
+   color: black;
+}
+
+.section-price {
+   padding-left: 170px;
+   background-color: #F5F5F5;
+}
+.price {
+   display: inline-block;
+   text-align: center;
+}
+.price__info {
+   display: inline; /*Не работает. Не разобралась еще, как сделать элементы в ряд*/
+}
+.price__info__title {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 24px;
+   font-weight: bold;
+   background-color: #333333;
+   color:#fff;
+   margin:0px 0px 2px;
+}
+.price__info__text {
+   font-family: 'Raleway', sans-serif;
+   font-size: 36px;
+   font-weight: bold;
+   background-color: #333333;
+   color:#fff;
+   margin:0px 0px 2px;
+}
+.price__info__discription {
+   font-family: 'Raleway', sans-serif;
+   font-size: 18px;
+   background-color: #333333;
+   color:#fff;
+   margin:0px 0px 2px;
+}
+.price__info__list {
+   list-style-type: none;
+   font-family: 'Raleway', sans-serif;
+   font-size: 18px;
+   text-transform: capitalize;
+   color:#86878B;
+   word-spacing: 3px;
+}
+.reviews__quote__text{
+   font-family: 'Raleway', sans-serif;
+   font-size: 18px;
+   color:#86878B;
+}
+.reviews__info__name__text {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 24px;
+   font-weight: bold;
+   color: black;
+}
+.reviews__info__name__discription {
+   font-family: 'Raleway', sans-serif;
+   font-size: 18px;
+   color:black;
+}
+
+.banner-call {
+   background-color: #333333; /*Временный фон что-бы видеть текст*/
+}
+.banner-call__tittle {
+   font-family: 'Raleway', sans-serif;
+   font-size: 36px;
+   color:#fff;
+   text-transform:uppercase;
+   font-weight: normal;
+   text-align: center;
+   padding-top: 100px;
+}
+.banner-call__text{
+   font-family: 'Raleway', sans-serif;
+   font-size: 18px;
+   color:#fff;
+   text-align: center;
+   padding-top: 30px;
+   padding-bottom: 20px;
+}
+.banner-call__button {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 18px;
+   text-decoration: none;
+   color: #fff;
+   text-transform: capitalize;
+   text-align: center;  /*Не знаю как центрировать ссылку-кнопку*/
+}
+
+.form__button {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 18px;
+   /*color: #fff;    На белом фоне ссылка не видна*/
+   text-decoration: none;
+}
+
+.footer {
+   background-color: black;
+}
+.footer__info__item {
+   display: inline;
+}
+.footer__info__menu {
+   word-spacing: 40px;
+   text-align: center;
+}
+.footer__copyright {
+   font-family: 'Raleway', sans-serif;
+   font-size: 18px;
+   color: #fff;
+   text-align: center;
+}
+.line {
+   border: 1px solid #EC7979;
+   width: 170px;
+}
+.title__discription {
+   font-family: 'Raleway', sans-serif;
+   font-size: 18px;
+   color: #86878B;
+   text-align: center;
+   padding-top: 20px;
+}
+.main-banner__line {
+   width: 170px;
+   border: 1px solid #fff;
+   margin: 0px;
+}
+hr {
+   width: 170px;
+}

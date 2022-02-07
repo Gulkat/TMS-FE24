@@ -8,7 +8,7 @@
    margin-top: 22.46px;
 }
 .header__menu {
-   word-spacing: 60px;
+   /*Не правильно*/word-spacing: 60px;
 }
 .header__menu__item {
    font-family: 'Open Sans', sans-serif;

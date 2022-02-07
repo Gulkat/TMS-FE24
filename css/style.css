@@ -1,0 +1,11 @@
+.box {
+   width: 80%;
+   margin:auto;
+   border-collapse: collapse; /*Схлопывает двойную границу между ячейками*/
+}
+td {
+   border: 1px solid #000;
+}
+td:nth-child(3) {
+   text-align: center;
+}

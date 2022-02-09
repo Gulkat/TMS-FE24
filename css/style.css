@@ -1,20 +1,139 @@
+*{
+   box-sizing: border-box;
+}
+body {
+   font: 400 18px/21px 'Raleway', sans-serif;
+   color:#86878B;
+}
+.container {
+
+}
+
+/*Titles*/
+h1,
+.title1 {
+   font-size: 48px;
+   line-height: 56px;
+   font-weight: 500;
+}
+h2,
+.title2 {
+   font-size: 36px;
+   line-height: 42px;
+   font-weight: 400;
+   padding-bottom: 50px;
+}
+h3,
+.title3 {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 30px;
+   line-height: 41px;
+   font-weight: 700;
+}
+h4,
+.title4 {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 24px;
+   line-height: 33px;
+   font-weight: 700;
+}
+.title {
+   color:black;
+   text-transform:uppercase;
+   text-align: center;
+   padding-top: 100px;
+}
+.title__discription {
+   color: #86878B;
+   text-align: center;
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+/*Buttons*/
+.main-banner__button,
+.banner-call__button { 
+   font-family: 'Open Sans', sans-serif;
+   display: inline-block;
+   width: 270px;
+   height: 60px;
+   padding: 21px 0;
+   border: 2px solid #FFF;
+   font-size: 18px;
+   line-height: 25px;
+   font-weight: 600;
+   text-decoration: none;
+   color: #fff;
+   text-align: center;
+   cursor: pointer;
+}
+.main-banner__button:hover,
+.banner-call__button:hover {
+   border: 2px solid #EC7979;
+   color: #EC7979;
+}
+.main-banner__button:active,
+.banner-call__button:active {
+   background-color: #AB4949;
+   border: 2px solid #AB4949;
+   color: #fff;
+}
+.about__info__button,
+.form__button {
+   font-family: 'Open Sans', sans-serif;
+   display: inline-block;
+   width: 270px;
+   height: 60px;
+   padding: 21px 0;
+   border: none;
+   background-color: #EC7979;
+   font-size: 18px;
+   line-height: 25px;
+   font-weight: 600;
+   text-decoration: none;
+   color: #fff;
+   text-align: center;
+   cursor: pointer;
+}
+.about__info__button:hover,
+.form__button:hover {
+   background-color: #AB4949;
+}
+.about__info__button:active,
+.form__button:active {
+   background-color: #EC7979;
+   box-shadow: inset 0px 0px 10px #AB4949;
+}
+.banner-call__button {
+   width: 370px;
+}
+.form__button {
+   font-size: 15px;
+   width: 470px;
+   border-radius: 0px 0px 10px 10px;
+}
+.banner-call__btn {
+   text-align: center;
+   padding-bottom: 50px;
+}
+
+/*Header*/
 .header {
    background-color: black;
    margin: 0;
    padding: 20px;
 }
 .header__logo {
-   margin-left: 115.28px;
-   margin-top: 22.46px;
-}
-.header__menu {
-   /*Не правильно*/word-spacing: 60px;
+   margin-left: 115px;
+   margin-top: 22px;
 }
 .header__menu__item {
    font-family: 'Open Sans', sans-serif;
    font-size: 14px;
+   line-height: 19px;
+   font-weight: 600;
    display: inline;
-   text-transform: capitalize;
+   text-transform:none;
    text-align: center;
    color:#fff;
 }
@@ -23,47 +142,34 @@
    color:#fff;
 }
 
+/*main-banner*/
 .main-banner {
-   background-color: grey;
-   padding-left: 170px;
+   background-color: rgba(0, 0, 0, 0.5);                        
    padding-top: 200px;
    padding-bottom: 200px;
 }
 .main-banner__title {
-   font-family: 'Raleway', sans-serif;
    text-transform: uppercase;
-   font-size: 48px;
-   font-weight: 500;
    color: #fff;
 }
 .main-banner__discriptoin {
-   font-family: 'Raleway', sans-serif;
-   font-size: 18px;
    color:#fff;
    padding-top: 30px;
 }
-.main-banner__button { /*Кнопка, надо ли стилизовать и как?*/
-   font-family: 'Open Sans', sans-serif;
-   font-size: 18px;
-   text-decoration: none;
-   color: #fff;
-   text-transform: capitalize;
-}
 
+
+/*Social media*/
 .media {
    background-color: #F8EFEF;
-   padding-left: 170px;
    padding-top: 5px;
 }
 .media__title {
    font-family: 'Open Sans', sans-serif;
    font-size: 24px;
-   color:#333333;
+   color:#333;
    text-transform: capitalize;
 }
 .media__discription {
-   font-family: 'Raleway', sans-serif;
-   font-size: 18px;
    color: #86878B;
 }
 .media__info__item {
@@ -73,111 +179,130 @@
    word-spacing: 30px;
 }
 
-.section {
-   padding-left: 170px;
-}
+/*about*/
 .about {
    list-style-type: none;
 }
 .about__item {
    font-family: 'Open Sans', sans-serif;
    font-size: 14px;
-   color:#333333;
+   color:#333;
    /* сделать заглавные в родителе только, что бы не передовалось остальным?*/
-   text-transform
+   text-transform:none;
+}
+.about__info {
+   border: 2px solid #C6CBCD;
+   width: 1170px;
+   height: 501px;
+}
+.about__info__img{
+   display:inline-block;
+
 }
 .about__info__block__title {
-   font-family: 'Open Sans', sans-serif;
-   font-size: 30px;
    color:black;
-   font-weight: bold;
+   font-weight: 700;
+   line-height: 41px;
 }
 .about__info__block__text {
-   font-family: 'Raleway', sans-serif;
-   font-size: 18px;
    color: black;
 }
-.about__info__button {
-   font-family: 'Open Sans', sans-serif;
-   font-size: 18px;
-   text-decoration: none;
-   /*без фона не видно. КНОПКА*/
-   /*color: #fff;*/
-}
 
-.title {
-   font-family: 'Raleway', sans-serif;
-   font-size: 36px;
-   color:black;
-   text-transform:uppercase;
-   font-weight: normal;
-   text-align: center;
-   padding-top: 100px;
-}
 .advantage__item {
-   display: inline;  /* Почему-то не работает!!! */
+   display:inline-block;
    list-style-type: none;
+   text-align: center;
+   padding-top: 50px;
 }
-
+.advantage__list {
+text-align: center;
+}
 .advantage__item__title {
-   font-family: 'Open Sans', sans-serif;
-   font-size: 24px;
-   font-weight: bold;
    color:black;
    text-transform:capitalize;
+   width: 370px;
+   height: 100px;
+   margin: 0px auto;
+   /*Центрировать по вертикали заголовок?*/
+
 }
 .advantage__item__text {
-   font-family: 'Raleway', sans-serif;
-   font-size: 18px;
    color: black;
+   word-wrap: break-word;
+   width: 370px;
+   height: 100px;
+}
+.advantage__item__img {
+   border: 1px solid #EC7979;
+   width: 92px;
+   height: 92px;
+   border-radius: 50%;
 }
 
+/*Price*/
 .section-price {
-   padding-left: 170px;
    background-color: #F5F5F5;
+   padding-bottom: 50px;
 }
 .price {
-   display: inline-block;
    text-align: center;
 }
-.price__info {
-   display: inline; /*Не работает. Не разобралась еще, как сделать элементы в ряд*/
+.price__info,
+.price__list__item {
+   display: inline-block;
+   width: 370px;
 }
 .price__info__title {
-   font-family: 'Open Sans', sans-serif;
-   font-size: 24px;
-   font-weight: bold;
-   background-color: #333333;
+   background-color: #333;
    color:#fff;
    margin:0px 0px 2px;
+   padding: 18px 0;
 }
 .price__info__text {
-   font-family: 'Raleway', sans-serif;
    font-size: 36px;
-   font-weight: bold;
+   font-weight: 700;
    background-color: #333333;
    color:#fff;
    margin:0px 0px 2px;
+   padding: 32px 0;
 }
 .price__info__discription {
-   font-family: 'Raleway', sans-serif;
-   font-size: 18px;
-   background-color: #333333;
-   color:#fff;
+   background-color: #333;
+   color:rgba(255, 255, 255, 0.5);
    margin:0px 0px 2px;
+   padding: 16px 0;
 }
 .price__info__list {
    list-style-type: none;
-   font-family: 'Raleway', sans-serif;
-   font-size: 18px;
-   text-transform: capitalize;
    color:#86878B;
    word-spacing: 3px;
+   text-align: center;
+   text-transform: capitalize;
+   padding: 0px;
+   margin: 0px auto;
+/* Есть вопросы*/
+}
+.price__list__item {
+   border: 2px solid #F5F5F5;
+   padding: 16px;
+   background: #FFF;
+}
+
+/*Reviews*/
+.reviews__quote {
+   display:inline-block;
+   list-style-type: none;
+   text-align: center;
+}
+.reviews {
+   text-align: center;
 }
 .reviews__quote__text{
-   font-family: 'Raleway', sans-serif;
-   font-size: 18px;
    color:#86878B;
+   background-color:#E2E2E2;
+   width: 370px;
+   height: 180px;
+   border-radius: 10px;
 }
 .reviews__info__name__text {
    font-family: 'Open Sans', sans-serif;
@@ -186,45 +311,28 @@
    color: black;
 }
 .reviews__info__name__discription {
-   font-family: 'Raleway', sans-serif;
-   font-size: 18px;
    color:black;
 }
 
 .banner-call {
-   background-color: #333333; /*Временный фон что-бы видеть текст*/
+   background-color: #333; /*Временный фон что-бы видеть текст*/
 }
 .banner-call__tittle {
-   font-family: 'Raleway', sans-serif;
    font-size: 36px;
+   line-height: 42px;
+   font-weight: 400;
    color:#fff;
    text-transform:uppercase;
    font-weight: normal;
    text-align: center;
    padding-top: 100px;
+   padding-bottom: 50px;
 }
 .banner-call__text{
-   font-family: 'Raleway', sans-serif;
-   font-size: 18px;
    color:#fff;
    text-align: center;
    padding-top: 30px;
-   padding-bottom: 20px;
-}
-.banner-call__button {
-   font-family: 'Open Sans', sans-serif;
-   font-size: 18px;
-   text-decoration: none;
-   color: #fff;
-   text-transform: capitalize;
-   text-align: center;  /*Не знаю как центрировать ссылку-кнопку*/
-}
-
-.form__button {
-   font-family: 'Open Sans', sans-serif;
-   font-size: 18px;
-   /*color: #fff;    На белом фоне ссылка не видна*/
-   text-decoration: none;
+   padding-bottom: 100px;
 }
 
 .footer {
@@ -236,23 +344,16 @@
 .footer__info__menu {
    word-spacing: 40px;
    text-align: center;
+   padding-top: 30px;
 }
 .footer__copyright {
-   font-family: 'Raleway', sans-serif;
-   font-size: 18px;
    color: #fff;
    text-align: center;
+   padding-bottom: 20px;
 }
 .line {
    border: 1px solid #EC7979;
    width: 170px;
-}
-.title__discription {
-   font-family: 'Raleway', sans-serif;
-   font-size: 18px;
-   color: #86878B;
-   text-align: center;
-   padding-top: 20px;
 }
 .main-banner__line {
    width: 170px;

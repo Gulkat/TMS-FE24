@@ -6,7 +6,9 @@ body {
    color:#86878B;
 }
 .container {
-
+max-width: 1200px;
+padding: 0 15px;
+margin: 0 auto;
 }
 
 /*Titles*/
@@ -21,7 +23,8 @@ h2,
    font-size: 36px;
    line-height: 42px;
    font-weight: 400;
-   padding-bottom: 50px;
+   color:black;
+   text-transform:uppercase;
 }
 h3,
 .title3 {
@@ -37,28 +40,22 @@ h4,
    line-height: 33px;
    font-weight: 700;
 }
-.title {
-   color:black;
-   text-transform:uppercase;
-   text-align: center;
-   padding-top: 100px;
-}
 .title__discription {
    color: #86878B;
+}
+.title {
    text-align: center;
-   padding-top: 30px;
-   padding-bottom: 30px;
+
+
 }
 
 /*Buttons*/
-.main-banner__button,
-.banner-call__button { 
+.btn {
    font-family: 'Open Sans', sans-serif;
    display: inline-block;
    width: 270px;
-   height: 60px;
-   padding: 21px 0;
-   border: 2px solid #FFF;
+   min-height: 60px;
+   padding: 21px 10px;
    font-size: 18px;
    line-height: 25px;
    font-weight: 600;
@@ -66,6 +63,10 @@ h4,
    color: #fff;
    text-align: center;
    cursor: pointer;
+}
+.main-banner__button,
+.banner-call__button { 
+   border: 2px solid #FFF;
 }
 .main-banner__button:hover,
 .banner-call__button:hover {
@@ -78,28 +79,16 @@ h4,
    border: 2px solid #AB4949;
    color: #fff;
 }
-.about__info__button,
+.about__button,
 .form__button {
-   font-family: 'Open Sans', sans-serif;
-   display: inline-block;
-   width: 270px;
-   height: 60px;
-   padding: 21px 0;
    border: none;
    background-color: #EC7979;
-   font-size: 18px;
-   line-height: 25px;
-   font-weight: 600;
-   text-decoration: none;
-   color: #fff;
-   text-align: center;
-   cursor: pointer;
 }
-.about__info__button:hover,
+.about__button:hover,
 .form__button:hover {
    background-color: #AB4949;
 }
-.about__info__button:active,
+.about__button:active,
 .form__button:active {
    background-color: #EC7979;
    box-shadow: inset 0px 0px 10px #AB4949;
@@ -109,10 +98,9 @@ h4,
 }
 .form__button {
    font-size: 15px;
-   width: 470px;
-   border-radius: 0px 0px 10px 10px;
+   width: 370px;
 }
-.banner-call__btn {
+.banner-call__btn { /*??? Так можно ли*/
    text-align: center;
    padding-bottom: 50px;
 }
@@ -127,7 +115,7 @@ h4,
    margin-left: 115px;
    margin-top: 22px;
 }
-.header__menu__item {
+.header__item {
    font-family: 'Open Sans', sans-serif;
    font-size: 14px;
    line-height: 19px;
@@ -137,7 +125,7 @@ h4,
    text-align: center;
    color:#fff;
 }
-.header__menu__link {
+.header__link {
    text-decoration: none;
    color:#fff;
 }
@@ -172,10 +160,10 @@ h4,
 .media__discription {
    color: #86878B;
 }
-.media__info__item {
+.media__item {
    display: inline;
 }
-.media__info__menu {
+.media__menu {
    word-spacing: 30px;
 }
 
@@ -195,16 +183,12 @@ h4,
    width: 1170px;
    height: 501px;
 }
-.about__info__img{
-   display:inline-block;
-
-}
-.about__info__block__title {
+.about__title {
    color:black;
    font-weight: 700;
    line-height: 41px;
 }
-.about__info__block__text {
+.about__text {
    color: black;
 }
 
@@ -217,7 +201,7 @@ h4,
 .advantage__list {
 text-align: center;
 }
-.advantage__item__title {
+.advantage__title {
    color:black;
    text-transform:capitalize;
    width: 370px;
@@ -226,13 +210,13 @@ text-align: center;
    /*Центрировать по вертикали заголовок?*/
 
 }
-.advantage__item__text {
+.advantage__text {
    color: black;
    word-wrap: break-word;
    width: 370px;
    height: 100px;
 }
-.advantage__item__img {
+.pic {
    border: 1px solid #EC7979;
    width: 92px;
    height: 92px;
@@ -248,17 +232,17 @@ text-align: center;
    text-align: center;
 }
 .price__info,
-.price__list__item {
+.price__item {
    display: inline-block;
    width: 370px;
 }
-.price__info__title {
+.price__title {
    background-color: #333;
    color:#fff;
    margin:0px 0px 2px;
    padding: 18px 0;
 }
-.price__info__text {
+.price__text {
    font-size: 36px;
    font-weight: 700;
    background-color: #333333;
@@ -266,13 +250,13 @@ text-align: center;
    margin:0px 0px 2px;
    padding: 32px 0;
 }
-.price__info__discription {
+.price__discription {
    background-color: #333;
    color:rgba(255, 255, 255, 0.5);
    margin:0px 0px 2px;
    padding: 16px 0;
 }
-.price__info__list {
+.price__list {
    list-style-type: none;
    color:#86878B;
    word-spacing: 3px;
@@ -282,7 +266,7 @@ text-align: center;
    margin: 0px auto;
 /* Есть вопросы*/
 }
-.price__list__item {
+.price__item {
    border: 2px solid #F5F5F5;
    padding: 16px;
    background: #FFF;
@@ -297,20 +281,21 @@ text-align: center;
 .reviews {
    text-align: center;
 }
-.reviews__quote__text{
+.reviews__text{
    color:#86878B;
    background-color:#E2E2E2;
    width: 370px;
    height: 180px;
-   border-radius: 10px;
+   border-radius: 5px;
+   margin: 0px;
 }
-.reviews__info__name__text {
+.reviews__name {
    font-family: 'Open Sans', sans-serif;
    font-size: 24px;
    font-weight: bold;
    color: black;
 }
-.reviews__info__name__discription {
+.reviews__post {
    color:black;
 }
 
@@ -324,24 +309,18 @@ text-align: center;
    color:#fff;
    text-transform:uppercase;
    font-weight: normal;
-   text-align: center;
-   padding-top: 100px;
-   padding-bottom: 50px;
 }
 .banner-call__text{
    color:#fff;
-   text-align: center;
-   padding-top: 30px;
-   padding-bottom: 100px;
 }
 
 .footer {
    background-color: black;
 }
-.footer__info__item {
+.footer__item {
    display: inline;
 }
-.footer__info__menu {
+.footer__menu {
    word-spacing: 40px;
    text-align: center;
    padding-top: 30px;

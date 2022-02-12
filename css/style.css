@@ -45,17 +45,30 @@ h4,
 }
 .title {
    text-align: center;
+   padding-top: 70px;
+}
 
 
+/*Divider*/
+.divider { /* как задать отступы*/
+   width: 170px;
+   border: 1px solid #EC7979;
+}
+.divider--light {
+   border-color: #fff;
+}
+.divider--left {
+   border-color: #fff;
+   margin-left: 0;
 }
 
 /*Buttons*/
 .btn {
    font-family: 'Open Sans', sans-serif;
    display: inline-block;
-   width: 270px;
+   min-width: 270px;
    min-height: 60px;
-   padding: 21px 10px;
+   padding: 15px 10px;
    font-size: 18px;
    line-height: 25px;
    font-weight: 600;
@@ -64,112 +77,148 @@ h4,
    text-align: center;
    cursor: pointer;
 }
-.main-banner__button,
-.banner-call__button { 
+.btn--crystal { 
    border: 2px solid #FFF;
 }
-.main-banner__button:hover,
-.banner-call__button:hover {
+.btn--large {
+   width: 370px;
+}
+.btn--color {
+   border: none;
+   background-color: #EC7979;
+}
+.btn--crystal:hover {
    border: 2px solid #EC7979;
    color: #EC7979;
 }
-.main-banner__button:active,
-.banner-call__button:active {
+.btn--crystal:active {
    background-color: #AB4949;
    border: 2px solid #AB4949;
    color: #fff;
 }
-.about__button,
-.form__button {
-   border: none;
-   background-color: #EC7979;
-}
-.about__button:hover,
-.form__button:hover {
+.btn--color:hover {
    background-color: #AB4949;
 }
-.about__button:active,
-.form__button:active {
+.btn--color:active {
    background-color: #EC7979;
    box-shadow: inset 0px 0px 10px #AB4949;
 }
-.banner-call__button {
-   width: 370px;
-}
-.form__button {
-   font-size: 15px;
-   width: 370px;
-}
-.banner-call__btn { /*??? Так можно ли*/
+
+/*.banner-call__btn { 
    text-align: center;
    padding-bottom: 50px;
-}
+} */
 
 /*Header*/
 .header {
+   height: 75px;
    background-color: black;
    margin: 0;
-   padding: 20px;
+   padding: 0;
+}
+.header__nav {
+   display: flex;
+   justify-content: space-between;
 }
 .header__logo {
-   margin-left: 115px;
-   margin-top: 22px;
+   height: 75px;
+   margin-left: -70px;
+}
+.header__menu {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   margin: 0;
 }
 .header__item {
+   list-style-type: none;
+}
+.header__item:hover {
+   background-color: #EC7979;
+}
+.header__item:active {
+   background-color: #AB4949;
+}
+.header__link {
+   display: inline-block;
+   text-decoration: none;
+   color:#fff;
    font-family: 'Open Sans', sans-serif;
    font-size: 14px;
    line-height: 19px;
    font-weight: 600;
-   display: inline;
-   text-transform:none;
+   text-transform: none;
    text-align: center;
-   color:#fff;
-}
-.header__link {
-   text-decoration: none;
-   color:#fff;
+   padding-left: 30px;
+   padding-right: 30px;
 }
 
 /*main-banner*/
 .main-banner {
-   background-color: rgba(0, 0, 0, 0.5);                        
-   padding-top: 200px;
-   padding-bottom: 200px;
+   background-color: rgba(0, 0, 0, 0.5);
+   height: 951px;
+   display: flex;
+   align-items: center;                 
+}
+.main-banner__logo {
+   width: 270px;
+   height: 100px;
+   margin: 0;
 }
 .main-banner__title {
    text-transform: uppercase;
    color: #fff;
+   margin: 51px 0 55px;
+
 }
 .main-banner__discriptoin {
    color:#fff;
-   padding-top: 30px;
+   margin: 42px 0;
+   width: 270px;
 }
-
 
 /*Social media*/
 .media {
    background-color: #F8EFEF;
    padding-top: 5px;
+   height: 140px;
+}
+.info-box {
+   float: left;
 }
 .media__title {
    font-family: 'Open Sans', sans-serif;
    font-size: 24px;
    color:#333;
    text-transform: capitalize;
+   margin: 0;
 }
 .media__discription {
    color: #86878B;
-}
-.media__item {
-   display: inline;
+   width: 470px;
 }
 .media__menu {
-   word-spacing: 30px;
+   display: flex;
+   justify-content: space-between; /*Как теперь сдвинуть в лево*/
+   align-items: center;
+   align-self: flex-end;
+   height: 140px;
+   margin: 0;
+
+}
+.media__item {
+   list-style-type: none;
+   text-align: center;
+   height: 70px;
+   width: 70px;
+
 }
 
-/*about*/
+/*about   Вопросы со шрифтами и их наследованием*/
 .about {
    list-style-type: none;
+   display: flex;
+   justify-content: flex-end;
 }
 .about__item {
    font-family: 'Open Sans', sans-serif;
@@ -179,9 +228,14 @@ h4,
    text-transform:none;
 }
 .about__info {
+   display: flex;
    border: 2px solid #C6CBCD;
    width: 1170px;
    height: 501px;
+}
+.about__block {
+   padding-left: 100px;
+   padding-right: 50px;
 }
 .about__title {
    color:black;
@@ -192,35 +246,44 @@ h4,
    color: black;
 }
 
+/*Advantage*/
+
+.advantage {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin-top: 50px;
+   padding: 0;
+
+}
 .advantage__item {
-   display:inline-block;
    list-style-type: none;
    text-align: center;
-   padding-top: 50px;
-}
-.advantage__list {
-text-align: center;
+   width: 370px;
 }
 .advantage__title {
    color:black;
    text-transform:capitalize;
    width: 370px;
-   height: 100px;
    margin: 0px auto;
    /*Центрировать по вертикали заголовок?*/
 
 }
 .advantage__text {
    color: black;
-   word-wrap: break-word;
    width: 370px;
-   height: 100px;
+   margin-top: 50px;
 }
 .pic {
+   display: flex;
+   justify-content: center;
+   align-items: center;
    border: 1px solid #EC7979;
    width: 92px;
    height: 92px;
    border-radius: 50%;
+   margin: 50px auto 50px;
+
 }
 
 /*Price*/
@@ -317,28 +380,20 @@ text-align: center;
 .footer {
    background-color: black;
 }
-.footer__item {
-   display: inline;
+.footer__info {
+   width: 570px;
+text-align: center;  /*Иконки не становятся по центру */
 }
 .footer__menu {
-   word-spacing: 40px;
-   text-align: center;
-   padding-top: 30px;
+   display: flex;
+   justify-content:space-between;
+}
+.footer__item {
+   list-style-type: none;
 }
 .footer__copyright {
    color: #fff;
    text-align: center;
    padding-bottom: 20px;
 }
-.line {
-   border: 1px solid #EC7979;
-   width: 170px;
-}
-.main-banner__line {
-   width: 170px;
-   border: 1px solid #fff;
-   margin: 0px;
-}
-hr {
-   width: 170px;
-}
+

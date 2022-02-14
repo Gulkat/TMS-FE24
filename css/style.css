@@ -126,7 +126,7 @@ h4,
 }
 .header__menu {
    display: flex;
-   align-items: center;
+   align-items: stretch;
    justify-content: flex-end;
    margin: 0;
 }
@@ -364,6 +364,7 @@ h4,
 
 .banner-call {
    background-color: #333; /*Временный фон что-бы видеть текст*/
+   height: 442px;
 }
 .banner-call__tittle {
    font-size: 36px;
@@ -382,7 +383,7 @@ h4,
 }
 .footer__info {
    width: 570px;
-text-align: center;  /*Иконки не становятся по центру */
+   text-align: center;  /*Иконки не становятся по центру */
 }
 .footer__menu {
    display: flex;

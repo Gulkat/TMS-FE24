@@ -1,11 +1,28 @@
-.box {
-   width: 80%;
-   margin:auto;
-   border-collapse: collapse; /*Схлопывает двойную границу между ячейками*/
+.list {
+   display: flex;
+   justify-content: center;
+   font-size: 24px;
+   font-style: italic;
+   margin-top: 100px;
 }
-td {
-   border: 1px solid #000;
+.number {
+   list-style-type: none;
 }
-td:nth-child(3) {
-   text-align: center;
+.list-box1 {
+   counter-reset: my-counter;
 }
+.number::before{
+   content: counter(my-counter);
+   counter-increment: my-counter;
+   color: red;
+   font-size: 40px;
+   margin-right: 5px;
+}
+.list-box2{
+   margin-left: 300px;
+}
+.marker::marker {
+   color: red;
+   font-size: 40px;
+}
+

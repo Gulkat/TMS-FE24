@@ -111,7 +111,6 @@ h4,
 
 /*Header*/
 .header {
-   height: 75px;
    background-color: black;
    margin: 0;
    padding: 0;
@@ -121,17 +120,18 @@ h4,
    justify-content: space-between;
 }
 .header__logo {
+   align-self: center;
    height: 75px;
    margin-left: -70px;
 }
 .header__menu {
    display: flex;
-   align-items: stretch;
    justify-content: flex-end;
    margin: 0;
 }
 .header__item {
    list-style-type: none;
+   min-width: 113px;
 }
 .header__item:hover {
    background-color: #EC7979;
@@ -140,7 +140,6 @@ h4,
    background-color: #AB4949;
 }
 .header__link {
-   display: inline-block;
    text-decoration: none;
    color:#fff;
    font-family: 'Open Sans', sans-serif;
@@ -148,17 +147,14 @@ h4,
    line-height: 19px;
    font-weight: 600;
    text-transform: none;
+   padding: 28px 27px;
    text-align: center;
-   padding-left: 30px;
-   padding-right: 30px;
 }
 
 /*main-banner*/
 .main-banner {
    background-color: rgba(0, 0, 0, 0.5);
-   height: 951px;
-   display: flex;
-   align-items: center;                 
+   padding-bottom: 185px;                 
 }
 .main-banner__logo {
    width: 270px;
@@ -177,11 +173,12 @@ h4,
    width: 270px;
 }
 
+
 /*Social media*/
 .media {
    background-color: #F8EFEF;
-   padding-top: 5px;
-   height: 140px;
+   padding-top: 7px;
+   padding-bottom: 7px;
 }
 .info-box {
    float: left;
@@ -189,28 +186,32 @@ h4,
 .media__title {
    font-family: 'Open Sans', sans-serif;
    font-size: 24px;
+   line-height: 33px;
    color:#333;
    text-transform: capitalize;
-   margin: 0;
+   margin-top: -10px;
+   margin-bottom: 0;
 }
 .media__discription {
    color: #86878B;
    width: 470px;
 }
+
 .media__menu {
    display: flex;
-   justify-content: space-between; /*Как теперь сдвинуть в лево*/
-   align-items: center;
-   align-self: flex-end;
-   height: 140px;
-   margin: 0;
-
+   justify-content:space-between;
+   margin-left: 60px;
+   padding-top: 20px;
+   padding-left: 50px;
 }
+
 .media__item {
    list-style-type: none;
-   text-align: center;
    height: 70px;
    width: 70px;
+   text-align: center;
+}
+.media__icon {
 
 }
 
@@ -219,6 +220,7 @@ h4,
    list-style-type: none;
    display: flex;
    justify-content: flex-end;
+   align-items: stretch;
 }
 .about__item {
    font-family: 'Open Sans', sans-serif;

@@ -1,11 +1,92 @@
-.box {
-   width: 80%;
-   margin:auto;
-   border-collapse: collapse; /*Схлопывает двойную границу между ячейками*/
+body {
+   padding: 40px;
 }
-td {
-   border: 1px solid #000;
+.picture {
+   border: 5px solid red;
+   width: 1300px;
+   height: 800px;
+   margin: 0 auto;
 }
-td:nth-child(3) {
-   text-align: center;
+
+.house {
+   width: 250px;
+   height: 350px;
+   background-color: rgba(0,0,0,0.1);
+   margin-top:180px;
+   margin-left: 480px;
+   position: relative;
+}
+.square {
+	width: 198px;
+	height: 200px;
+   border: 2px solid red;
+   position: absolute;
+   top: 145px;
+   left: 20px;
+}
+.roof {
+   width: 0;
+   height: 0;
+   border-left: 100px solid transparent;
+   border-right: 100px solid transparent;
+   border-bottom: 100px solid rgb(150, 130, 51);
+   position: absolute;
+   top:45px;
+   left: 21px; ;
+   z-index: 1;
+}
+.fence {
+   width: 20px;
+	height: 40px;
+	background:#000;
+   position: absolute;
+   top: 60px;
+   left: 65px;
+}
+.door {
+   width: 50px;
+	height: 100px;
+	border:2px solid #000;
+   background:rgb(221, 160, 28);
+   position: absolute;
+   top: 230px;
+   left:50px;
+}
+.window {
+   width: 60px;
+	height: 60px;
+   border: 2px solid black;
+   background:rgb(90, 175, 250);
+   position: absolute;
+   top: 200px;
+   left:130px;
+}
+.window-line {
+   width: 30px;
+	height: 60px;
+   border: 2px solid black;
+   position: absolute;
+   top: 200px;
+   left:130px;
+}
+.window-box {
+   width: 28px;
+	height: 30px;
+   border: 2px solid black;
+   position: absolute;
+   top: 200px;
+   right:56px;
+}
+.circle {
+   border: 2px solid #140b89;
+   width: 50px;
+   height: 50px;
+	background: rgb(90, 175, 250);
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+   position: absolute;
+   top: 80px;
+   left:95px;
+   z-index: 1;
 }

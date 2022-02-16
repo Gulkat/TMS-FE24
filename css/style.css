@@ -103,11 +103,10 @@ h4,
    background-color: #EC7979;
    box-shadow: inset 0px 0px 10px #AB4949;
 }
-
-/*.banner-call__btn { 
+.banner-call__btn { 
    text-align: center;
    padding-bottom: 50px;
-} */
+}
 
 /*Header*/
 .header {
@@ -118,15 +117,15 @@ h4,
 .header__nav {
    display: flex;
    justify-content: space-between;
+   align-items: center;
 }
 .header__logo {
    align-self: center;
-   height: 75px;
    margin-left: -70px;
 }
 .header__menu {
    display: flex;
-   justify-content: flex-end;
+   justify-content: center;
    margin: 0;
 }
 .header__item {
@@ -140,6 +139,9 @@ h4,
    background-color: #AB4949;
 }
 .header__link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
    text-decoration: none;
    color:#fff;
    font-family: 'Open Sans', sans-serif;
@@ -147,24 +149,28 @@ h4,
    line-height: 19px;
    font-weight: 600;
    text-transform: none;
-   padding: 28px 27px;
+   padding: 28px 27px; 
    text-align: center;
+
 }
 
 /*main-banner*/
 .main-banner {
-   background-color: rgba(0, 0, 0, 0.5);
-   padding-bottom: 185px;                 
+   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/banner.png);
+   background-repeat: no-repeat;
+   background-size:cover;
+   background-position: 50%;
+   padding-bottom: 131px;
+   padding-top: 154px;                 
 }
 .main-banner__logo {
    width: 270px;
    height: 100px;
-   margin: 0;
 }
 .main-banner__title {
    text-transform: uppercase;
    color: #fff;
-   margin: 51px 0 55px;
+   margin-bottom: 55px;
 
 }
 .main-banner__discriptoin {
@@ -210,9 +216,6 @@ h4,
    height: 70px;
    width: 70px;
    text-align: center;
-}
-.media__icon {
-
 }
 
 /*about   Вопросы со шрифтами и их наследованием*/
@@ -365,8 +368,11 @@ h4,
 }
 
 .banner-call {
-   background-color: #333; /*Временный фон что-бы видеть текст*/
-   height: 442px;
+   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/banner-call.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 50%;
+   padding-bottom: 50px;  
 }
 .banner-call__tittle {
    font-size: 36px;
@@ -378,25 +384,35 @@ h4,
 }
 .banner-call__text{
    color:#fff;
+   margin-top: 32px;
+   margin-bottom: 32px;
 }
 
 .footer {
    background-color: black;
 }
 .footer__info {
+   padding-top: 38px;
    width: 570px;
-   text-align: center;  /*Иконки не становятся по центру */
+   text-align: center;
+   margin: 0 auto;
 }
 .footer__menu {
    display: flex;
-   justify-content:space-between;
+   justify-content: space-between;
+   margin: 0;
 }
 .footer__item {
    list-style-type: none;
+   height: 45px;
+   width: 45px;
+   text-align: center;
 }
 .footer__copyright {
-   color: #fff;
+   color: rgba(255, 255, 255, 0.5);
    text-align: center;
-   padding-bottom: 20px;
+   padding-bottom: 30px;
+   padding-top: 35px;
+   margin: 0;
 }
 

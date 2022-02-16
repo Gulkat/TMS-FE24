@@ -1,12 +1,17 @@
 .list {
    display: flex;
-   justify-content: center;
+   justify-content:space-around;
    font-size: 24px;
    font-style: italic;
    margin-top: 100px;
+   padding-left: 200px;
+   padding-right: 200px;
 }
 .number {
    list-style-type: none;
+   position: relative;
+   margin-bottom: 20px;
+   padding-left: 30px;
 }
 .list-box1 {
    counter-reset: my-counter;
@@ -14,15 +19,18 @@
 .number::before{
    content: counter(my-counter);
    counter-increment: my-counter;
+   position: absolute;
+   left: 0;
+   top:-10px;
    color: red;
    font-size: 40px;
    margin-right: 5px;
 }
-.list-box2{
-   margin-left: 300px;
+.marker {
+   list-style-type: none;
+   margin-bottom: 20px;
+   padding-left: 20px;
 }
-.marker::marker {
-   color: red;
-   font-size: 40px;
+.marker::before {
+   content: '';
 }
-

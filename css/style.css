@@ -42,19 +42,26 @@ h4,
 }
 .title__discription {
    color: #86878B;
+   margin-top: 40px;
+   margin-bottom: 0;
+}
+.title__discription--light {
+   color:#fff
 }
 .title {
    text-align: center;
    padding-top: 70px;
+   padding-bottom: 80px;
 }
-
+.title2--light {
+   color:#fff;
+}
 
 /*Divider*/
 .divider { 
    width: 170px;
-   border-width: 2px;
-   border-style: solid;
-   border-color: #EC7979;
+   border: none;
+   border-bottom: 2px solid #EC7979;
 }
 .divider--light {
    border-color: #fff;
@@ -84,6 +91,7 @@ h4,
 }
 .btn--large {
    width: 370px;
+   margin-bottom: 50px;
 }
 .btn--color {
    border: none;
@@ -105,9 +113,8 @@ h4,
    background-color: #EC7979;
    box-shadow: inset 0px 0px 10px #AB4949;
 }
-.banner-call__btn { 
+.btn-center {
    text-align: center;
-   padding-bottom: 50px;
 }
 
 /*Header*/
@@ -124,6 +131,7 @@ h4,
 .header__logo {
    align-self: center;
    margin-left: -70px;
+   height: 75px;
 }
 .header__menu {
    display: flex;
@@ -162,8 +170,8 @@ h4,
    background-repeat: no-repeat;
    background-size:cover;
    background-position: 50%;
-   padding-bottom: 131px;
-   padding-top: 154px;                 
+   padding-bottom: 231px;
+   padding-top: 185px;                 
 }
 .main-banner__logo {
    width: 270px;
@@ -173,6 +181,7 @@ h4,
    text-transform: uppercase;
    color: #fff;
    margin-bottom: 55px;
+   margin-top: 73px;
 
 }
 .main-banner__discriptoin {
@@ -203,7 +212,6 @@ h4,
    color: #86878B;
    width: 470px;
 }
-
 .media__menu {
    display: flex;
    justify-content:space-between;
@@ -211,7 +219,6 @@ h4,
    padding-top: 20px;
    padding-left: 50px;
 }
-
 .media__item {
    list-style-type: none;
    height: 70px;
@@ -219,7 +226,6 @@ h4,
    text-align: center;
 }
 
-/*about   Вопросы со шрифтами и их наследованием*/
 .about {
    list-style-type: none;
    display:inline-block;
@@ -234,11 +240,23 @@ h4,
    padding: 0;
    background-color: #fff;
    border:none;
-   padding-bottom: 10px;
+   padding-bottom: 9px;
+   padding-top: 9px;
 }
+.about__item:nth-child(1) {
+   border-top: 1px solid #C6CBCD;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+   border-left:1px solid #C6CBCD;
+   border-right: 1px solid #C6CBCD;
+   border-bottom: 1px solid #fff;
+   background: #fff;
+   margin-bottom: -2px;
+}
+
 .about__info {
    display: flex;
-   border: 2px solid #C6CBCD;
+   border: 1px solid #C6CBCD;
    width: 1170px;
    height: 501px;
 }
@@ -247,14 +265,16 @@ h4,
    margin-right: 30px;
 }
 .about__title {
-   padding-top: 20px;
+   padding-top: 50px;
+   padding-bottom: 77px;
+   margin: 0;
    color:black;
    font-weight: 700;
    line-height: 41px;
 }
 .about__text {
+   padding-bottom: 27px;
    margin: 0;
-   padding-bottom: 26px;
    color: black;
 }
 
@@ -264,9 +284,11 @@ h4,
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
-   margin-top: 50px;
+   margin: 0;
    padding: 0;
-
+}
+.advantage__list {
+   margin-bottom: 60px;
 }
 .advantage__item {
    list-style-type: none;
@@ -283,6 +305,7 @@ h4,
    color: black;
    width: 370px;
    margin-top: 50px;
+   margin-bottom: 0;
 }
 .pic {
    display: flex;
@@ -292,7 +315,7 @@ h4,
    width: 92px;
    height: 92px;
    border-radius: 50%;
-   margin: 50px auto 50px;
+   margin: 30px auto 50px;
 }
 
 /*Price*/
@@ -302,17 +325,16 @@ h4,
 }
 .price {
    text-align: center;
-}
-.price__info,
-.price__item {
-   display: inline-block;
-   width: 370px;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+
 }
 .price__title {
    background-color: #333;
    color:#fff;
    margin:0px 0px 2px;
-   padding: 18px 0;
+   padding: 14px 0;
 }
 .price__text {
    font-size: 36px;
@@ -320,13 +342,20 @@ h4,
    background-color: #333333;
    color:#fff;
    margin:0px 0px 2px;
-   padding: 32px 0;
+   padding: 40px 0;
 }
 .price__discription {
    background-color: #333;
    color:rgba(255, 255, 255, 0.5);
    margin:0px 0px 2px;
-   padding: 16px 0;
+   padding: 15px 0;
+}
+.price__info{
+   width: 370px;
+}
+.price__info:nth-child(2) {
+   transform: translateY(-20px);
+   filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
 }
 .price__list {
    list-style-type: none;
@@ -336,30 +365,51 @@ h4,
    text-transform: capitalize;
    padding: 0px;
    margin: 0px auto;
-/* Есть вопросы*/
 }
 .price__item {
    border: 2px solid #F5F5F5;
-   padding: 16px;
+   padding: 13px;
    background: #FFF;
 }
 
 /*Reviews*/
-.reviews__quote {
-   display:inline-block;
-   list-style-type: none;
-   text-align: center;
-}
 .reviews {
-   text-align: center;
+   display: flex;
+   justify-content: space-between;
+}
+.reviews__quote {
+   position: relative;
+}
+.reviews__text::after {
+   content: "";
+   position: absolute;
+   border-left: 15px solid transparent;
+   border-right: 15px solid transparent;
+   border-top: 20px solid #E2E2E2;
+   top:179px;
+   left:70px;
 }
 .reviews__text{
    color:#86878B;
    background-color:#E2E2E2;
    width: 370px;
-   height: 180px;
    border-radius: 5px;
    margin: 0px;
+   padding: 38px 15px;
+   text-align: center;
+}
+.reviews__discription {
+   width: 370px;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   margin-top: 66px;
+   margin-bottom: 64px;
+}
+
+.reviews__info {
+   padding-left: 30px;
+
 }
 .reviews__name {
    font-family: 'Open Sans', sans-serif;
@@ -376,27 +426,13 @@ h4,
    background-repeat: no-repeat;
    background-size: cover;
    background-position: 50%;
-   padding-bottom: 50px;  
-}
-.banner-call__tittle {
-   font-size: 36px;
-   line-height: 42px;
-   font-weight: 400;
-   color:#fff;
-   text-transform:uppercase;
-   font-weight: normal;
-}
-.banner-call__text{
-   color:#fff;
-   margin-top: 32px;
-   margin-bottom: 32px;
 }
 
 .footer {
    background-color: black;
 }
 .footer__info {
-   padding-top: 38px;
+   padding-top: 35px;
    width: 570px;
    text-align: center;
    margin: 0 auto;
@@ -408,15 +444,15 @@ h4,
 }
 .footer__item {
    list-style-type: none;
-   height: 45px;
-   width: 45px;
+   height: 53px;
+   width: 53px;
    text-align: center;
 }
 .footer__copyright {
    color: rgba(255, 255, 255, 0.5);
    text-align: center;
-   padding-bottom: 30px;
-   padding-top: 35px;
+   padding-bottom: 27px;
+   padding-top: 28px;
    margin: 0;
 }
 

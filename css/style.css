@@ -25,6 +25,7 @@ h2,
    font-weight: 400;
    color:black;
    text-transform:uppercase;
+   margin-bottom: 60px;
 }
 h3,
 .title3 {
@@ -46,12 +47,13 @@ h4,
    margin-bottom: 0;
 }
 .title__discription--light {
-   color:#fff
+   color:#fff;
+   margin-bottom: 83px;
 }
 .title {
    text-align: center;
-   padding-top: 70px;
-   padding-bottom: 80px;
+   /* padding-top: 70px; */
+   /* margin-bottom: 80px; */
 }
 .title2--light {
    color:#fff;
@@ -91,7 +93,6 @@ h4,
 }
 .btn--large {
    width: 370px;
-   margin-bottom: 50px;
 }
 .btn--color {
    border: none;
@@ -211,11 +212,11 @@ h4,
 .media__discription {
    color: #86878B;
    width: 470px;
+   margin-bottom: 0;
 }
 .media__menu {
    display: flex;
    justify-content:space-between;
-   margin-left: 60px;
    padding-top: 20px;
    padding-left: 50px;
 }
@@ -227,11 +228,14 @@ h4,
 }
 
 .about {
+   padding-top: 100px;  
+   padding-bottom: 10px;
+}
+.info {
    list-style-type: none;
    display:inline-block;
-   margin-top: 100px;
 }
-.about__item {
+.info__item {
    font-family: 'Open Sans', sans-serif;
    font-size: 14px;
    color:#333;
@@ -243,7 +247,7 @@ h4,
    padding-bottom: 9px;
    padding-top: 9px;
 }
-.about__item:nth-child(1) {
+.info__item:nth-child(1) {
    border-top: 1px solid #C6CBCD;
    border-top-left-radius: 5px;
    border-top-right-radius: 5px;
@@ -266,20 +270,24 @@ h4,
 }
 .about__title {
    padding-top: 50px;
-   padding-bottom: 77px;
-   margin: 0;
+   margin-top: 0;
+   margin-bottom: 77px;
    color:black;
    font-weight: 700;
    line-height: 41px;
 }
 .about__text {
-   padding-bottom: 27px;
-   margin: 0;
+   margin-bottom: 27px;
+   margin-top: 0;
    color: black;
 }
 
 /*Advantage*/
 
+.benefits {
+   padding-top: 70px;
+   padding-bottom: 58px;
+}
 .advantage {
    display: flex;
    justify-content: space-between;
@@ -288,7 +296,8 @@ h4,
    padding: 0;
 }
 .advantage__list {
-   margin-bottom: 60px;
+
+   margin-top: 80px;
 }
 .advantage__item {
    list-style-type: none;
@@ -315,20 +324,21 @@ h4,
    width: 92px;
    height: 92px;
    border-radius: 50%;
-   margin: 30px auto 50px;
+   margin: 30px auto 70px;
 }
 
 /*Price*/
 .section-price {
    background-color: #F5F5F5;
    padding-bottom: 50px;
+   padding-top: 70px;
 }
 .price {
    text-align: center;
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
-
+   margin-top: 79px;
 }
 .price__title {
    background-color: #333;
@@ -373,9 +383,14 @@ h4,
 }
 
 /*Reviews*/
+.section-reviews {
+   padding-top: 100px;
+   padding-bottom: 30px;
+}
 .reviews {
    display: flex;
    justify-content: space-between;
+   margin-top: 83px;
 }
 .reviews__quote {
    position: relative;
@@ -395,16 +410,15 @@ h4,
    width: 370px;
    border-radius: 5px;
    margin: 0px;
-   padding: 38px 15px;
+   padding: 37px 20px;
    text-align: center;
 }
 .reviews__discription {
    width: 370px;
    display: flex;
-   align-items: center;
+   align-items: flex-start;
    justify-content: flex-start;
    margin-top: 66px;
-   margin-bottom: 64px;
 }
 
 .reviews__info {
@@ -422,17 +436,27 @@ h4,
 }
 
 .banner-call {
+   padding-top: 85px;
+   padding-bottom: 50px;
    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/banner-call.png);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: 50%;
 }
+.form {
+   padding-top: 85px;
+   padding-bottom: 50px;
+}
+.form-box {
+   margin-bottom: 89px;
+}
 
 .footer {
    background-color: black;
+   padding-top: 35px;
+   padding-bottom: 27px;
 }
 .footer__info {
-   padding-top: 35px;
    width: 570px;
    text-align: center;
    margin: 0 auto;
@@ -451,8 +475,7 @@ h4,
 .footer__copyright {
    color: rgba(255, 255, 255, 0.5);
    text-align: center;
-   padding-bottom: 27px;
-   padding-top: 28px;
-   margin: 0;
+   margin-top: 28px;
+   margin-bottom: 0;
 }
 

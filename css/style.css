@@ -3,9 +3,8 @@
    justify-content:space-around;
    font-size: 24px;
    font-style: italic;
-   margin-top: 100px;
-   padding-left: 200px;
-   padding-right: 200px;
+   margin: 200px 400px;
+
 }
 .number {
    list-style-type: none;
@@ -26,15 +25,22 @@
    font-size: 40px;
    margin-right: 5px;
 }
-.marker::marker {
-   color: red;
-   font-size: 40px;
-   margin-right: 5px;
+
+.circle {
+   list-style-type: none;
+   position: relative;;
 }
-.marker{
-   padding-top: 6px;
+.marker {
+   margin-bottom: 20px;
 }
-ul {
-   margin: 0;
+.marker::before {
+   content:'';
+   width: 12px;
+	height: 12px;
+	background: red;
+	border-radius: 50%;
+   position: absolute;
+   right: 70px;
+   margin-top: 7px;
 }
 

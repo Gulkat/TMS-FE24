@@ -50,10 +50,8 @@ h4,
    color:#fff;
    margin-bottom: 83px;
 }
-.title {
+.title-wrap {
    text-align: center;
-   /* padding-top: 70px; */
-   /* margin-bottom: 80px; */
 }
 .title2--light {
    color:#fff;
@@ -64,6 +62,8 @@ h4,
    width: 170px;
    border: none;
    border-bottom: 2px solid #EC7979;
+   margin-top: 0;
+   margin-bottom: 0;
 }
 .divider--light {
    border-color: #fff;
@@ -116,6 +116,11 @@ h4,
 }
 .btn-center {
    text-align: center;
+}
+.form__btn {
+   width: 100%;
+   font-size: 15px;
+   line-height: 20px;
 }
 
 /*Header*/
@@ -172,17 +177,24 @@ h4,
    background-size:cover;
    background-position: 50%;
    padding-bottom: 231px;
-   padding-top: 185px;                 
+   padding-top: 185px;
+}
+.title-box {
+
+   margin: 0;
+   position: relative;   
 }
 .main-banner__logo {
    width: 270px;
    height: 100px;
 }
+
 .main-banner__title {
    text-transform: uppercase;
    color: #fff;
    margin-bottom: 55px;
    margin-top: 73px;
+   width: 670px;
 
 }
 .main-banner__discriptoin {
@@ -191,14 +203,62 @@ h4,
    width: 270px;
 }
 
+.main-banner__form {
+   width: 470px;
+   background: #fff;
+   border-radius: 10px;
+   overflow: hidden;
+   position: absolute;
+   right: 0px;
+   top: 0px;
+}
+.form-inner {
+   padding: 30px 50px 75px;
+}
+.form__row + .form__row {
+margin-top: 15px;
+}
+.title-form {
+   margin-bottom: 75px;
+   text-transform: uppercase;
+   color: #000;
+}
+.attn {
+   color: #EC7979;
+   font-style: normal;
+
+}
+.form-input {
+   font-family: 'Open Sans', sans-serif; 
+   font-size: 14px;
+   line-height: 19px;
+   font-weight: 400;
+   width: 100%;
+   color: #000;
+   border: none;
+   border-bottom: 1px solid #BDBDBD;
+   padding: 15px 0;
+   background: none;
+   outline: none;
+}
+.form-input:focus {
+   border-color: #000;
+}
+.form-input:hover {}    
+
+.form-input::placeholder {
+   color:#BDBDBD;
+}
 /*Social media*/
 .media {
    background-color: #F8EFEF;
-   padding-top: 7px;
-   padding-bottom: 7px;
+   padding-top: 14px;
+   padding-bottom: 18px;
 }
-.info-box {
-   float: left;
+.media-wraper {
+   display: flex;
+   justify-content: space-between;   
+
 }
 .media__title {
    font-family: 'Open Sans', sans-serif;
@@ -206,25 +266,24 @@ h4,
    line-height: 33px;
    color:#333;
    text-transform: capitalize;
-   margin-top: -10px;
-   margin-bottom: 0;
+   margin-top: 0;
+   margin-bottom: 32px;
 }
 .media__discription {
    color: #86878B;
-   width: 470px;
-   margin-bottom: 0;
+   margin: 0;
 }
 .media__menu {
    display: flex;
    justify-content:space-between;
-   padding-top: 20px;
-   padding-left: 50px;
+   padding:0
 }
 .media__item {
    list-style-type: none;
    height: 70px;
    width: 70px;
    text-align: center;
+   margin-left: 30px;
 }
 
 .about {
@@ -263,9 +322,9 @@ h4,
    border: 1px solid #C6CBCD;
    width: 1170px;
    height: 501px;
+   padding-left: 100px;
 }
 .about__block {
-   margin-left: 100px;
    margin-right: 30px;
 }
 .about__title {
@@ -294,11 +353,9 @@ h4,
    flex-wrap: wrap;
    margin: 0;
    padding: 0;
-}
-.advantage__list {
-
    margin-top: 80px;
 }
+
 .advantage__item {
    list-style-type: none;
    text-align: center;
@@ -315,6 +372,10 @@ h4,
    width: 370px;
    margin-top: 50px;
    margin-bottom: 0;
+}
+.about__img {
+   width: 470px;
+   height: 500px;
 }
 .pic {
    display: flex;
@@ -363,7 +424,7 @@ h4,
 .price__info{
    width: 370px;
 }
-.price__info:nth-child(2) {
+.price__info--accent {
    transform: translateY(-20px);
    filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
 }
@@ -443,12 +504,49 @@ h4,
    background-size: cover;
    background-position: 50%;
 }
-.form {
+.communication {
    padding-top: 85px;
    padding-bottom: 50px;
 }
+.communication__form {
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 50px;
+   padding-top: 74px;
+   background: #fff;
+}
 .form-box {
-   margin-bottom: 89px;
+   padding-right: 30px;
+}
+.form-box__row {
+   width: 570px;
+}
+.form-box__row + .form-box__row {
+   margin-top: 32px;
+   }
+.form-box__input {
+   width: 100%;
+   font-family: 'Open Sans', sans-serif; 
+   font-size: 14px;
+   line-height: 19px;
+   font-weight: 400;
+   color: #000;
+   border: none;
+   border-bottom: 1px solid #BDBDBD;
+   padding: 15px 0;
+   background: none;
+   outline: none;
+}
+.form-box__input:focus {
+   border-color: #000;
+}
+
+.form-box__input::placeholder {
+   color: #BDBDBD;
+}
+
+textarea.form-box__input {
+   resize: none;
 }
 
 .footer {

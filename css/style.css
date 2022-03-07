@@ -5,11 +5,6 @@ body {
    font: 400 18px/21px 'Raleway', sans-serif;
    color:#86878B;
 }
-.container {
-max-width: 1200px;
-padding: 0 15px;
-margin: 0 auto;
-}
 
 /*Titles*/
 h1,
@@ -23,9 +18,7 @@ h2,
    font-size: 36px;
    line-height: 42px;
    font-weight: 400;
-   color:black;
-   text-transform:uppercase;
-   margin-bottom: 60px;
+
 }
 h3,
 .title3 {
@@ -52,10 +45,16 @@ h4,
 }
 .title-wrap {
    text-align: center;
+   color: #000;
 }
 .title2--light {
    color:#fff;
 }
+.title-text {
+   text-transform:uppercase;
+   margin-bottom: 60px;
+}
+
 
 /*Divider*/
 .divider { 
@@ -174,37 +173,26 @@ h4,
 .main-banner {
    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/banner.png);
    background-repeat: no-repeat;
-   background-size:cover;
+   background-size: cover;
    background-position: 50%;
    padding-bottom: 231px;
    padding-top: 185px;
 }
 .title-box {
-
    margin: 0;
    position: relative;   
 }
-.main-banner__logo {
-   width: 270px;
-   height: 100px;
-}
-
 .main-banner__title {
    text-transform: uppercase;
    color: #fff;
    margin-bottom: 55px;
    margin-top: 73px;
-   width: 670px;
-
 }
 .main-banner__discriptoin {
    color:#fff;
-   margin: 42px 0;
-   width: 270px;
+   margin: 42px 400px 42px 0px;
 }
-
 .main-banner__form {
-   width: 470px;
    background: #fff;
    border-radius: 10px;
    overflow: hidden;
@@ -222,6 +210,7 @@ margin-top: 15px;
    margin-bottom: 75px;
    text-transform: uppercase;
    color: #000;
+   text-align: center;
 }
 .attn {
    color: #EC7979;
@@ -244,7 +233,9 @@ margin-top: 15px;
 .form-input:focus {
    border-color: #000;
 }
-.form-input:hover {}    
+.form-input:hover {
+   border-color: #000;
+}    
 
 .form-input::placeholder {
    color:#BDBDBD;
@@ -254,11 +245,6 @@ margin-top: 15px;
    background-color: #F8EFEF;
    padding-top: 14px;
    padding-bottom: 18px;
-}
-.media-wraper {
-   display: flex;
-   justify-content: space-between;   
-
 }
 .media__title {
    font-family: 'Open Sans', sans-serif;
@@ -273,17 +259,23 @@ margin-top: 15px;
    color: #86878B;
    margin: 0;
 }
+.media__info {
+   padding-top: 30px;
+}
 .media__menu {
-   display: flex;
-   justify-content:space-between;
+   /* display: flex;
+   justify-content:space-between; */
    padding:0
 }
-.media__item {
+/* .media__item {
    list-style-type: none;
    height: 70px;
    width: 70px;
    text-align: center;
    margin-left: 30px;
+} */
+.media__icon {
+   padding-top: 30px;
 }
 
 .about {
@@ -348,28 +340,19 @@ margin-top: 15px;
    padding-bottom: 58px;
 }
 .advantage {
-   display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
-   margin: 0;
-   padding: 0;
    margin-top: 80px;
 }
-
 .advantage__item {
    list-style-type: none;
    text-align: center;
-   width: 370px;
 }
 .advantage__title {
    color:black;
    text-transform:capitalize;
-   width: 370px;
    margin: 0px auto;
 }
 .advantage__text {
    color: black;
-   width: 370px;
    margin-top: 50px;
    margin-bottom: 0;
 }
@@ -396,9 +379,6 @@ margin-top: 15px;
 }
 .price {
    text-align: center;
-   display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
    margin-top: 79px;
 }
 .price__title {
@@ -420,9 +400,6 @@ margin-top: 15px;
    color:rgba(255, 255, 255, 0.5);
    margin:0px 0px 2px;
    padding: 15px 0;
-}
-.price__info{
-   width: 370px;
 }
 .price__info--accent {
    transform: translateY(-20px);
@@ -449,8 +426,6 @@ margin-top: 15px;
    padding-bottom: 30px;
 }
 .reviews {
-   display: flex;
-   justify-content: space-between;
    margin-top: 83px;
 }
 .reviews__quote {
@@ -468,14 +443,12 @@ margin-top: 15px;
 .reviews__text{
    color:#86878B;
    background-color:#E2E2E2;
-   width: 370px;
    border-radius: 5px;
    margin: 0px;
    padding: 37px 20px;
    text-align: center;
 }
 .reviews__discription {
-   width: 370px;
    display: flex;
    align-items: flex-start;
    justify-content: flex-start;
@@ -511,8 +484,8 @@ margin-top: 15px;
 .communication__form {
    display: flex;
    justify-content: space-between;
-   padding-bottom: 50px;
-   padding-top: 74px;
+   margin-bottom: 50px;
+   margin-top: 74px;
    background: #fff;
 }
 .form-box {
@@ -547,6 +520,8 @@ margin-top: 15px;
 
 textarea.form-box__input {
    resize: none;
+   overflow: auto;
+   height: 214px;
 }
 
 .footer {

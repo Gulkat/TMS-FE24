@@ -8,6 +8,8 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="/TMS-FE24/fonts/fontawesome/css/all.min.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
    <link rel="stylesheet" href="./css/reset.css">
    <link rel="stylesheet" href="./css/bootstrap-grid.css">
    <link rel="stylesheet" href="./css/style.css">
@@ -21,13 +23,14 @@
          <a href="" class="header__logo">
          <img src="images/logo.svg" alt="Axit" class="header__img">
          </a>
-         <ul class="header__menu">
+         <ul class="header__menu header__menu--open">
             <li class="header__item"><a href="" class="header__link">Features</a></li>
             <li class="header__item"><a href="" class="header__link">About</a></li>
             <li class="header__item"><a href="" class="header__link">Pricing</a></li>
             <li class="header__item"><a href="" class="header__link">Reviews</a></li>
             <li class="header__item"><a href="" class="header__link">Contact</a></li>
          </ul>
+      <button class="mobile-menu__btn"><i class="fa-solid fa-bars fa-bars--menu"></i></button>         
       </nav>
       </div>
    </header>
@@ -35,7 +38,7 @@
       <section class="main-banner">
       <div class="container">
          <div class="row">
-            <div class="col-xl-7 col-lg-7 col-md-7 col-sm-6">
+            <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
                <div class="title-box">
                <img src="images/logo.svg" alt="Axit" class="main-banner__logo">
                <h1 class="title1 main-banner__title">modern axure template for beautiful prototypes</h1>
@@ -44,19 +47,20 @@
                <a href="" class="btn btn--crystal">Download</a>
             </div>
             </div>
-            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-6">
-               <div class="form-wraper">
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-5 col">
+               <div class="form-wrapper">
                   <form class="main-banner__form">
                      <div class="form-inner">
                         <h3 class="title4 title-form">Try Your <em class="attn">Free</em> Trial Today</h3>
                         <div class="form__row">
-                        <input class="form-input" type="text" placeholder="Name">
+                        <input class="form__fill" type="text" placeholder="Name">
                         </div>
                         <div class="form__row">
-                        <input class="form-input" type="email" placeholder="Email">
+                        <input class="form__fill" type="email" placeholder="Email">
                         </div>
                         <div class="form__row">
-                        <input class="form-input" type="password" placeholder="Password">
+                        <input class="form__fill" type="password" placeholder="Password">
                         </div>
                      </div>
                      <button class="btn btn--color form__btn">Get Started</button>
@@ -69,33 +73,25 @@
       <section class="media">
          <div class="container">
             <div class="row">
-               <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5">
+               <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
                   <div class="info-box">     
                   <h3 class="title3 media__title">Social Media</h3>
                   <p class="media__discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
                   </div>
                </div>
-                     <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1"> 
-                     <a href=""><img src="images/f.svg" alt="Facebook" class="media__icon"></a>
-                     </div>
-                     <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1">
-                     <a href=""><img src="images/twitter.svg" alt="Twitter" class="media__icon"></a>
-                     </div>
-                     <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1">
-                     <a href=""><img src="images/ln.svg" alt="LinkedIn" class="media__icon"></a>
-                     </div>
-                     <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1">
-                     <a href=""><img src="images/p.svg" alt="Printerest" class="media__icon"></a>
-                     </div>
-                     <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1">
-                     <a href=""><img src="images/inst.svg" alt="Instagram" class="media__icon"></a>
-                     </div>
-                     <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1">
-                     <a href=""><img src="images/gh.svg" alt="GitHub" class="media__icon"></a>
-                     </div>
-                     <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1">
-                     <a href=""><img src="images/rss.svg" alt="Rss" class="media__icon"></a>
-                     </div>
+               <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                  <address class="media__info">
+                     <ul class="media__menu">
+                        <li class="media__item"><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li class="media__item"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li class="media__item"><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li class="media__item"><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+                        <li class="media__item"><a href=""><i class="fa-brands fa-instagram-square"></i></a></li>
+                        <li class="media__item"><a href=""><i class="fa-brands fa-github"></i></a></li>
+                        <li class="media__item"><a href=""><i class="fa-solid fa-rss"></i></a></li>
+                     </ul>
+                  </address>
+               </div>   
             </div>
          </div> 
       </section>
@@ -107,14 +103,20 @@
                <button class="info__item">Tab 2</button>
                <button class="info__item">Tab 3</button>
             </div>
-            <div class="about__info">
-               <div class="about__block">
+            <div class="about__info">            
+            <div class="row">
+               <div class="col-xl-7 col-lg-7 col-md-7">
+                  <div class="about__content">
                   <h3 class="title3 about__title">Tabs with soft transitioning effect.</h3>
                   <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
                   <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
                   <a href="" class="btn btn--color">Download</a>
+                  </div>
                </div>
+               <div class="col-xl-5 col-lg-5 col-md-5">
                <img src="images/Rectangle111.png" alt="picture" class="about__img">
+               </div>
+            </div>
             </div>
          </div>
       </section>  
@@ -127,9 +129,8 @@
                <hr class="divider">
                <p class="title__discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-            <ul class="advantage"> <!--Убрать список и оставить только div?-->
-            <div class="row">
-               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+            <ul class="advantage row">
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                   <li class="advantage__item">
                      <div class="pic">
                      <img src="images/pic1.svg" alt="picture" class="advantage__img">
@@ -138,7 +139,7 @@
                      <p class="advantage__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
                   </li>
                </div>
-               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                   <li class="advantage__item">
                      <div class="pic">
                      <img src="images/pic2.svg" alt="picture" class="advantage__img">
@@ -147,7 +148,7 @@
                      <p class="advantage__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
                   </li>                  
                </div>
-               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                   <li class="advantage__item">
                      <div class="pic">
                      <img src="images/pic3.svg" alt="picture" class="advantage__img">
@@ -155,8 +156,7 @@
                      <h3 class="title4 advantage__title">Thoughtful Design</h3>
                      <p class="advantage__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
                   </li>                  
-               </div>
-            </div>   
+               </div> 
             </ul>
          </div>
       </section>
@@ -171,7 +171,7 @@
             </div>
             <div class="price">
                <div class="row">
-                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                      <div class="price__info">
                         <h3 class="title4 price__title">Basic</h3>
                         <p class="price__text">$10</p>
@@ -186,7 +186,7 @@
                         </ul>
                      </div>                  
                   </div>
-                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                      <div class="price__info price__info--accent">
                         <h3 class="title4 price__title">Optima</h3>
                         <p class="price__text">$20</p>
@@ -201,7 +201,7 @@
                         </ul>
                      </div>                  
                   </div>
-                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                      <div class="price__info">
                         <h3 class="title4 price__title">Pro</h3>
                         <p class="price__text">$30</p>
@@ -231,7 +231,7 @@
             </div>
          <div class="reviews">
             <div class="row">
-               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                   <div class="reviews__quote">
                      <blockquote class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</blockquote>
                      <div class="reviews__discription">
@@ -243,7 +243,7 @@
                      </div>
                   </div>                  
                </div>
-               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                   <div class="reviews__quote">
                      <blockquote class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</blockquote>
                      <div class="reviews__discription">
@@ -255,7 +255,7 @@
                      </div>
                   </div>                  
                </div>
-               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                   <div class="reviews__quote">
                      <blockquote class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</blockquote>
                      <div class="reviews__discription">
@@ -295,19 +295,21 @@
                   <p class="title__discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <form class="communication__form">
-               <div class="form-box">
-                  <div class="form-box__row">
-                     <input class="form-box__input" type="text" placeholder="Name">
+               <div class="row">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-8">
+                     <div class="form__row">
+                        <input class="form__fill" type="text" placeholder="Name">
+                     </div>
+                     <div class="form__row">
+                        <input class="form__fill" type="email" placeholder="Email">
+                     </div>
+                     <div class="form__row">
+                        <input class="form__fill" type="password" placeholder="Password">
+                     </div>
                   </div>
-                  <div class="form-box__row">
-                     <input class="form-box__input" type="email" placeholder="Email">
-                  </div>
-                  <div class="form-box__row">
-                     <input class="form-box__input" type="password" placeholder="Password">
-                  </div>
-               </div>
-               <div class="form-box__row">
-               <textarea class="form-box__input" placeholder="Massage"></textarea>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-8">
+                  <textarea class="form__fill" placeholder="Massage"></textarea>
+                  </div>                  
                </div>
             </form>
             <div class="btn-center">
@@ -318,20 +320,23 @@
    </main>
    <footer class="footer">
       <div class="container">
-      <address class="footer__info">
-         <ul class="footer__menu">
-            <li class="footer__item"><a href=""><img src="images/f1.svg" alt="Facebook" class="footer__icon"></a></li>
-            <li class="footer__item"><a href=""><img src="images/Twitter1.svg" alt="Twitter" class="footer__icon"></a></li>
-            <li class="footer__item"><a href=""><img src="images/in1.svg" alt="LinkedIn" class="footer__icon"></a></li>
-            <li class="footer__item"><a href=""><img src="images/p1.svg" alt="Printerest" class="footer__icon"></a></li>
-            <li class="footer__item"><a href=""><img src="images/inst1.svg" alt="Instagram" class="footer__icon"></a></li>
-            <li class="footer__item"><a href=""><img src="images/gh1.svg" alt="GitHub" class="footer__icon"></a></li>
-            <li class="footer__item"><a href=""><img src="images/rss1.svg" alt="Rss" class="footer__icon"></a></li>
+      <address class="media__info media__info--lil">
+         <ul class="media__menu media__menu--lil">
+            <li class="media__item"><a href=""><i class="fa-brands fa-brands--lil fa-facebook-f"></i></a></li>
+            <li class="media__item"><a href=""><i class="fa-brands fa-brands--lil fa-twitter"></i></a></li>
+            <li class="media__item"><a href=""><i class="fa-brands fa-brands--lil fa-linkedin"></i></a></li>
+            <li class="media__item"><a href=""><i class="fa-brands fa-brands--lil fa-pinterest"></i></a></li>
+            <li class="media__item"><a href=""><i class="fa-brands fa-brands--lil fa-instagram-square"></i></a></li>
+            <li class="media__item"><a href=""><i class="fa-brands fa-brands--lil fa-github"></i></a></li>
+            <li class="media__item"><a href=""><i class="fa-solid fa-solid--lil fa-rss"></i></a></li>
          </ul>
       </address>
       <p class="footer__copyright">&copy; 2015 Axure Themes</p>
       </div>
    </footer>
+
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+   <script src="js/script.js"></script>
 </body>
 </html>
 

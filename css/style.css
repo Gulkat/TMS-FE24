@@ -459,6 +459,24 @@ color:#EC7979;
 .reviews__post {
    color:black;
 }
+.quote-slider .swiper-pagination {
+   bottom: 0;
+}
+.swiper-pagination-bullet {
+   border: 1px solid #86878B;
+   width: 10px;
+   height: 10px;
+   line-height: 16px;
+   font-size: 12px;
+   background-color: #ffffff;
+}
+.swiper-pagination-bullet-active {
+   background-color: #86878B;
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet 
+{
+   margin: 0 var(--swiper-pagination-bullet-horizontal-gap,50px);
+}
 .banner-call {
    padding: 85px 0 50px;
    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/banner-call.png);

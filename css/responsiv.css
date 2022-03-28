@@ -264,11 +264,10 @@
       left: 0;
    }
 
-
-   /* .header__menu--open {
+/* .header__menu--open {
       opacity: 1;
       visibility: visible;
-   } */
+   }  */
 
    .main-banner {
       padding: 70px 0 70px;
@@ -355,7 +354,6 @@
 
 }
 @media only screen and (max-width: 575px) {
-
    .header__logo {
       display: block;
    }
@@ -367,7 +365,6 @@
       font-size: 36px;
       line-height: 42px;
    }
-
    .info-box {
       text-align: center;
    }

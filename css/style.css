@@ -1,6 +1,9 @@
 *{
    box-sizing: border-box;
 }
+html, body {
+   width: 100%;
+}
 body {
    font: 400 18px/21px 'Raleway', sans-serif;
    color:#86878B;
@@ -367,6 +370,10 @@ color:#EC7979;
    border-radius: 50%;
    margin: 30px auto 70px;
    object-fit: contain;
+   transition: 2s;
+}
+.pic:hover {
+   transform: rotateY(360deg);
 }
 
 /*Price*/

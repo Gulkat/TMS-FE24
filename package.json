@@ -1,5 +1,27 @@
 {
+  "name": "tms-fe24",
+  "source": "index.html",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gulkat/TMS-FE24.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gulkat/TMS-FE24/issues"
+  },
+  "homepage": "https://github.com/Gulkat/TMS-FE24#readme",
+  "dependencies": {
+    "parcel": "^2.4.0",
+    "sass": "^1.49.9"
+  },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.3.2"
+    "@parcel/transformer-sass": "^2.4.0"
   }
 }

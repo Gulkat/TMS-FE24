@@ -11,7 +11,7 @@
    .about__content {
       padding: 30px 0 50px 70px;
    }
-   }
+}
 @media only screen and (max-width: 1199px) {
    .main-banner__discriptoin {
       font-size: 14px;
@@ -36,9 +36,6 @@
    }
    .media__menu {
       margin-top: 20px;
-   }
-   .fa-brands, .fa-solid {
-      font-size: 48px;
    }
    .info__item {
       width: 150px;
@@ -77,6 +74,7 @@
    }
    .advantage__title {
       font-size: 18px;
+      line-height: 25px;
    }
    .advantage__text {
       font-size: 14px;
@@ -116,15 +114,17 @@
    }
 }
 @media only screen and (max-width: 991px) {
+   
+   .title1 {
+      font-size: 36px;
+      line-height: 42px;
+   }
    .title2 {
       font-size: 24px;
       line-height: 28px;
    }
    .header__logo {
       margin-left: 0;
-   }
-   .header__menu {
-      flex-wrap: wrap;
    }
    .header__link {
       font-size: 12px;
@@ -148,9 +148,9 @@
    .main-banner__discriptoin {
       font-size: 14px;
       line-height: 16px;
-      margin: 40px 0;
+      margin: 40px 80px 40px 0;
    }
-   .main-banner__form {
+   .form-wrapper {
       margin-top: 30px;
    }
    .form-inner {
@@ -249,8 +249,13 @@
       width: 100%;
       position: fixed;
    }
-   .mobile-menu__btn {
-      display: inline-block;
+   .header__logo {
+      display: block;
+      margin-left: 18px;
+   }
+   .hamburger {
+      display: block;
+      padding: 20px 0;
    }
    .header__menu {
       background-color: rgb(0, 0, 0);
@@ -262,15 +267,35 @@
       width: 100%;
       top: 75px;
       left: 0;
+      height: 100%;
    }
-
-/* .header__menu--open {
+   .header__menu li {
+      transition: all .4s;
+   }
+   #check-menu:checked ~ .header__menu {
       opacity: 1;
       visibility: visible;
-   }  */
-
+      transition: all .3s;
+   }
+   #check-menu:checked ~ .hamburger .hamburger-line {
+      background-color: transparent;
+   }
+   #check-menu:checked ~ .hamburger .hamburger-line::before {
+      transform: rotate(-45deg);
+      top:0;
+   }
+   #check-menu:checked ~ .hamburger .hamburger-line::after {
+      transform: rotate(45deg);
+      top:0;
+   }
    .main-banner {
-      padding: 70px 0 70px;
+      padding: 159px 0 50px;
+   }
+   .main-banner__title {
+      margin: 0 0 43px;
+   }
+   .main-banner__discriptoin {
+      margin: 40px 0;
    }
    .title-box {
       text-align: center;
@@ -283,29 +308,25 @@
       margin: auto;
    }
    .btn--crystal {
-   min-width: 270px;
+      min-width: 288px;
    }
    .form-wrapper {
-      margin-left: 100px;
-      margin-right: 100px;
-   }
-   .main-banner__form {
-      margin-top: 50px;
+      margin: 56px 100px 0;
    }
    .form__fill {
       font-size: 12px;
       line-height: 16px;
    }
    .media__discription {
-      font-size: 12px;
-      line-height: 14px;
+      font-size: 14px;
+      line-height: 16px;
       margin-bottom: 10px;
    }
    .media__info {
       margin-bottom: 0;
    }
    .about {
-      padding-top: 70px;
+      padding-top: 41px;
    }
    .about__content {
       text-align: center;
@@ -332,12 +353,29 @@
    .price__info {
       margin-bottom: 25px;
    }
+   .price__info:hover {
+      transform: scale(1.05);
+   }
    .reviews__discription {
       margin: 40px 0;
    }
-   
-   textarea.form__fill {
-      padding-top: 36px;
+   .reviews__text {
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+   .form__data {
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+      margin-right: 0;
+   }
+   .form__message {
+      grid-column: 1 / 3;
+      grid-row: 3 / 4;
+      margin-left: 0;
+   }
+   .contacts__btn {
+      grid-column: 1 / 3;
+      grid-row: 4 / 5;
    }
    .fa-brands--lil, .fa-solid--lil {
       font-size: 24px;
@@ -349,21 +387,31 @@
    .footer__copyright {
       font-size: 12px;
       line-height: 16px;
-      margin: 10px;
+      margin-top: 44px;
    }
-
+   
 }
 @media only screen and (max-width: 575px) {
-   .header__logo {
-      display: block;
+   .hamburger {
+      margin-right: 20px;
    }
-   .main-banner {
-      padding: 84px 0 50px;
+   .form-wrapper {
+      margin-left: 0;
+      margin-right: 0;
    }
-   .main-banner__title {
-      margin: 0 0 43px;
-      font-size: 36px;
-      line-height: 42px;
+   .btn--crystal {
+      width: 288px;
+      padding: 11px 10px;
+      font-size: 18px;
+   }
+   .btn--large {
+      width: 288px;
+   }
+   .media {
+      padding: 41px 0 46px;
+   }
+   .media__menu {
+      margin: 0;
    }
    .info-box {
       text-align: center;
@@ -371,8 +419,14 @@
    .fa-brands, .fa-solid {
       font-size: 24px;
    }
-   .media__menu {
-      margin: 20px 0 20px;
+   .media__title {
+      margin-bottom: 23px;
+   }
+   .media__discription {
+      margin-bottom: 34px;
+   }
+   .media__info {
+      margin: 0;
    }
    .info__item {
       width: 95px;
@@ -382,15 +436,52 @@
    }
    .about__content {
       text-align: center;
-      padding: 20px 30px 20px;
+      padding: 43px 23px 30px;
    }
    .about__title {
       font-size: 18px;
       line-height: 24px;
+      margin-bottom: 73px;
+   }
+   .about__text {
+      margin-bottom: 29px;
+   }
+   .btn {
+      width: 243px;
+      font-size: 18px;
+      line-height: 25px;
+      padding: 12px 10px;
+   }
+   .form__btn {
+      width: 100%;
+   }
+   .benefits {
+      padding-bottom: 16px;
    }
    .title2 {
       font-size: 18px;
       line-height: 21px;
+   }
+   .title-text {
+      margin-bottom: 50px;
+   }
+   .title__discription {
+      margin-top: 25px;
+      font-size: 13px;
+      line-height: 15px;
+   }
+   .advantage {
+      margin-top: 110px;
+   }
+   .pic {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 61px;
+      margin-top: 0;
+   }
+   .advantage__text {
+      margin-top: 38px;
+      margin-bottom: 44px;
    }
    .price__title {
       font-size: 18px;
@@ -408,6 +499,9 @@
       font-size: 14px;
       line-height: 16px;
    }
+   .reviews__discription {
+      margin-bottom: 0;
+   }
    .communication__form {
       margin-top: 50px;
    }
@@ -417,5 +511,9 @@
    }
    .fa-bars--menu {
       font-size: 35px;
-      }
+   }
+   .footer {
+      padding: 35px 0 35px;
+   }
+   
 }

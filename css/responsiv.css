@@ -248,6 +248,7 @@
    .header {
       width: 100%;
       position: fixed;
+      z-index: 3;
    }
    .header__logo {
       display: block;
